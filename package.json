@@ -3,7 +3,12 @@
 	"displayName": "VariableFormatter",
 	"description": "A variable name format conversion program",
 	"version": "0.0.1",
-  "publisher": "leeou",
+	"publisher": "leeou",
+	"author": "leeou",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/imleeou/VariableFormatter"
+	},
 	"engines": {
 		"vscode": "^1.54.0"
 	},
