@@ -20,6 +20,14 @@
 			{
 				"command": "upperCamelCase",
 				"title": "转为大驼峰"
+			},
+			{
+				"command": "hyphenJoin",
+				"title": "连字符(-)连接"
+			},
+			{
+				"command": "underlineJoin",
+				"title": "下划线(_)连接"
 			}
 		],
 		"menus": {
@@ -32,12 +40,20 @@
 			],
 			"menuChildren": [
 				{
-					"command": "upperCamelCase",
-					"group": "navigation"
+					"command": "lowerCamelCase",
+					"group": "navigation@1"
 				},
 				{
-					"command": "lowerCamelCase",
-					"group": "navigation"
+					"command": "upperCamelCase",
+					"group": "navigation@2"
+				},
+				{
+					"command": "underlineJoin",
+					"group": "navigation@3"
+				},
+				{
+					"command": "hyphenJoin",
+					"group": "navigation@4"
 				}
 			]
 		},
