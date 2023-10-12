@@ -1,6 +1,6 @@
 {
 	"name": "variableformatter",
-	"displayName": "VariableFormatter",
+	"displayName": "Variable Formatter",
 	"description": "A variable name format conversion program",
 	"version": "0.0.1",
 	"publisher": "leeou",
@@ -12,6 +12,7 @@
 	"engines": {
 		"vscode": "^1.54.0"
 	},
+	"icon": "logo.png",
 	"categories": [
 		"Other"
 	],
