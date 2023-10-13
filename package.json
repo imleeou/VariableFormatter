@@ -2,7 +2,7 @@
 	"name": "variableformatter",
 	"displayName": "Variable Formatter",
 	"description": "A variable name format conversion program",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"publisher": "leeou",
 	"author": "leeou",
 	"repository": {
