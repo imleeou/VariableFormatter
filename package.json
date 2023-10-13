@@ -35,6 +35,11 @@
 			{
 				"command": "underlineJoin",
 				"title": "下划线(_)连接"
+			},
+			{
+				"command": "variableFormatter.toggleCamelCase",
+				"title": "Variable Formatter：切换驼峰命名格式",
+				"when": "editorHasSelection"
 			}
 		],
 		"menus": {
@@ -68,6 +73,13 @@
 			{
 				"id": "menuChildren",
 				"label": "Variable Formatter"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "variableFormatter.toggleCamelCase",
+				"key": "ctrl+alt+f",
+				"mac": "ctrl+alt+f"
 			}
 		]
 	},
