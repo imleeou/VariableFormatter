@@ -1,17 +1,27 @@
 <!-- 封面区域 -->
-<div align="center">
-
-![VariableFormatter](https://oss.leeou.cc/VariableFormatter/icon-transparent.png)
-
+<div style="display:flex;justify-content: center;align-items: center;">
+<img src="https://oss.leeou.cc/VariableFormatter/icon-transparent.png" alt="VariableFormatter" width="300" height="300">
 </div>
 
-
 > 一个变量名称格式化的 vsCode 扩展插件。
+>
 > A variable name formats the vsCode extension plugin.
 
 ## Usage
 
+### Visual operation
+
+When you select a word to convert, right-click on it, hover over the `VariableFormatter` and select the format to convert to.
+
 ![VariableFormatter](https://oss.leeou.cc/VariableFormatter/demo.gif)
+
+### Default shortcut
+
+Please configure the shortcut keys according to your personal habits.
+
+| Shortcut     | Description                                                                                                                                         |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Ctrl+Alt+F` | Toggles between full camel case and small camel case. If the initial text is not in full camel case, the default is to convert to small camel case. |
 
 ## Features
 
