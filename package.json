@@ -12,7 +12,7 @@
 	"engines": {
 		"vscode": "^1.54.0"
 	},
-	"icon": "logo.png",
+	"icon": "https://oss.leeou.cc/VariableFormatter/icon.png",
 	"categories": [
 		"Other"
 	],
