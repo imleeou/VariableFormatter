@@ -1,5 +1,5 @@
 <!-- 封面区域 -->
-<div style="display:flex;justify-content: center;align-items: center;">
+<div align='center'>
 <img src="https://oss.leeou.cc/VariableFormatter/icon-transparent.png" alt="VariableFormatter" width="300" height="300">
 </div>
 
