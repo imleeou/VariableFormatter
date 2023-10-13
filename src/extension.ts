@@ -5,7 +5,8 @@ import { COMMANDS } from "./commands";
 export function activate(context: vscode.ExtensionContext) {
 	// 注册命令
 	COMMANDS.forEach((command) => {
-		context.subscriptions.push(vscode.commands.registerCommand(command.name, command.methods));
+		const commandBody = vscode.commands.registerCommand(command.name, command.methods);
+		context.subscriptions.push(commandBody);
 	});
 }
 

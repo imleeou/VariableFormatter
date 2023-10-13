@@ -29,12 +29,12 @@
 				"title": "转为大驼峰"
 			},
 			{
-				"command": "hyphenJoin",
-				"title": "连字符(-)连接"
-			},
-			{
 				"command": "underlineJoin",
 				"title": "下划线(_)连接"
+			},
+			{
+				"command": "customSymbolJoin",
+				"title": "自定义连接符连接"
 			},
 			{
 				"command": "variableFormatter.toggleCamelCase",
@@ -42,6 +42,19 @@
 				"when": "editorHasSelection"
 			}
 		],
+		"configuration": {
+			"type": "object",
+			"title": "Variable Formatter",
+			"properties": {
+				"variableFormatter.customSymbol": {
+					"type": "string",
+					"default": "-",
+					"minLength": 1,
+					"maxLength": 5,
+					"markdownDescription": "自定义连接符"
+				}
+			}
+		},
 		"menus": {
 			"editor/context": [
 				{
@@ -64,7 +77,7 @@
 					"group": "navigation@3"
 				},
 				{
-					"command": "hyphenJoin",
+					"command": "customSymbolJoin",
 					"group": "navigation@4"
 				}
 			]

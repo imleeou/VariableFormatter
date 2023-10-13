@@ -1,3 +1,4 @@
+import * as vscode from "vscode";
 import { CommandType } from "./types";
 import { getCurrentWord, replaceCurrentWord } from "./utils";
 import { toCamelCase, toPascalCase, toSymbolJoin } from "./utils/convert";
@@ -20,13 +21,6 @@ export const COMMANDS: CommandType[] = [
 		}
 	},
 	{
-		name: "hyphenJoin",
-		methods: () => {
-			const text = getCurrentWord();
-			replaceCurrentWord(toSymbolJoin(text));
-		}
-	},
-	{
 		name: "underlineJoin",
 		methods: () => {
 			const text = getCurrentWord();
@@ -44,6 +38,14 @@ export const COMMANDS: CommandType[] = [
 				text = toCamelCase(text);
 			}
 			replaceCurrentWord(text);
+		}
+	},
+	{
+		name: "customSymbolJoin",
+		methods: () => {
+			const { customSymbol } = vscode.workspace.getConfiguration("variableFormatter");
+			const text = getCurrentWord();
+			replaceCurrentWord(toSymbolJoin(text, customSymbol));
 		}
 	}
 ];
