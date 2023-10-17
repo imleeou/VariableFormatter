@@ -102,18 +102,20 @@
 		"watch": "tsc -watch -p ./",
 		"pretest": "pnpm run compile && pnpm run lint",
 		"lint": "eslint src --ext ts",
-		"test": "node ./out/test/runTest.js"
+		"test": "node ./out/test/runTest.js",
+		"format": "prettier --write \"src/**/*.@(ts|tsx|js|vue)\""
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.54.0",
 		"@types/mocha": "^10.0.2",
 		"@types/node": "18.x",
+		"@types/vscode": "^1.54.0",
 		"@typescript-eslint/eslint-plugin": "^6.7.3",
 		"@typescript-eslint/parser": "^6.7.3",
+		"@vscode/test-electron": "^2.3.4",
 		"eslint": "^8.50.0",
 		"glob": "^10.3.3",
 		"mocha": "^10.2.0",
-		"typescript": "^5.2.2",
-		"@vscode/test-electron": "^2.3.4"
+		"prettier": "^3.0.3",
+		"typescript": "^5.2.2"
 	}
 }
