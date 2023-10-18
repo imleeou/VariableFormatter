@@ -1,5 +1,15 @@
 {
   "semi": true,
   "singleQuote": true,
-  "printWidth": 120
+  "printWidth": 120,
+   "tabWidth": 2,
+   "useTabs": false,
+   "trailingComma": "none",
+   "bracketSpacing": true,
+   "rules": {
+    "no-multiple-empty-lines": [
+      "error",
+      1
+    ]
+  }
 }

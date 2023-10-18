@@ -11,21 +11,21 @@ export const COMMANDS: CommandType[] = [
     methods: () => {
       const text = getCurrentWord();
       replaceCurrentWord(toCamelCase(text));
-    },
+    }
   },
   {
     name: 'upperCamelCase',
     methods: () => {
       const text = getCurrentWord();
       replaceCurrentWord(toPascalCase(text));
-    },
+    }
   },
   {
     name: 'underlineJoin',
     methods: () => {
       const text = getCurrentWord();
       replaceCurrentWord(toSymbolJoin(text, '_'));
-    },
+    }
   },
   {
     name: 'variableFormatter.toggleCamelCase',
@@ -38,7 +38,7 @@ export const COMMANDS: CommandType[] = [
         text = toCamelCase(text);
       }
       replaceCurrentWord(text);
-    },
+    }
   },
   {
     name: 'customSymbolJoin',
@@ -46,6 +46,6 @@ export const COMMANDS: CommandType[] = [
       const { customSymbol } = vscode.workspace.getConfiguration('variableFormatter');
       const text = getCurrentWord();
       replaceCurrentWord(toSymbolJoin(text, customSymbol));
-    },
-  },
+    }
+  }
 ];
