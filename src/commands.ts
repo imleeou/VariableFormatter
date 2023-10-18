@@ -21,10 +21,32 @@ export const COMMANDS: CommandType[] = [
     }
   },
   {
+    name: 'lowerCase',
+    methods: () => {
+      const text = getCurrentWord();
+      replaceCurrentWord(text.toLowerCase());
+    }
+  },
+  {
+    name: 'upperCase',
+    methods: () => {
+      const text = getCurrentWord();
+      replaceCurrentWord(text.toUpperCase());
+    }
+  },
+  {
     name: 'underlineJoin',
     methods: () => {
       const text = getCurrentWord();
       replaceCurrentWord(toSymbolJoin(text, '_'));
+    }
+  },
+  {
+    name: 'constantName',
+    methods: () => {
+      const text = getCurrentWord();
+      const newText = toSymbolJoin(text, '_').toLocaleUpperCase();
+      replaceCurrentWord(newText);
     }
   },
   {

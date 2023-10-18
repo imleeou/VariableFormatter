@@ -1,123 +1,147 @@
 {
-	"name": "variableformatter",
-	"displayName": "Variable Formatter",
-	"description": "A variable name format conversion program",
-	"version": "0.0.4",
-	"publisher": "leeou",
-	"author": "leeou",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/imleeou/VariableFormatter"
-	},
-	"engines": {
-		"vscode": "^1.54.0"
-	},
-	"icon": "icon.png",
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [],
-	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "lowerCamelCase",
-				"title": "转为小驼峰"
-			},
-			{
-				"command": "upperCamelCase",
-				"title": "转为大驼峰"
-			},
-			{
-				"command": "underlineJoin",
-				"title": "下划线(_)连接"
-			},
-			{
-				"command": "customSymbolJoin",
-				"title": "自定义连接符连接"
-			},
-			{
-				"command": "variableFormatter.toggleCamelCase",
-				"title": "Variable Formatter：切换驼峰命名格式",
-				"when": "editorHasSelection"
-			}
-		],
-		"configuration": {
-			"type": "object",
-			"title": "Variable Formatter",
-			"properties": {
-				"variableFormatter.customSymbol": {
-					"type": "string",
-					"default": "-",
-					"minLength": 1,
-					"maxLength": 5,
-					"markdownDescription": "自定义连接符"
-				}
-			}
-		},
-		"menus": {
-			"editor/context": [
-				{
-					"group": "navigation",
-					"when": "editorTextFocus && editorHasSelection",
-					"submenu": "menuChildren"
-				}
-			],
-			"menuChildren": [
-				{
-					"command": "lowerCamelCase",
-					"group": "navigation@1"
-				},
-				{
-					"command": "upperCamelCase",
-					"group": "navigation@2"
-				},
-				{
-					"command": "underlineJoin",
-					"group": "navigation@3"
-				},
-				{
-					"command": "customSymbolJoin",
-					"group": "navigation@4"
-				}
-			]
-		},
-		"submenus": [
-			{
-				"id": "menuChildren",
-				"label": "Variable Formatter"
-			}
-		],
-		"keybindings": [
-			{
-				"command": "variableFormatter.toggleCamelCase",
-				"key": "ctrl+alt+f",
-				"mac": "ctrl+alt+f"
-			}
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "pnpm run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"pretest": "pnpm run compile && pnpm run lint",
-		"lint": "eslint src --ext ts",
-		"test": "node ./out/test/runTest.js",
-		"format": "prettier --write \"src/**/*.@(ts|tsx|js|vue)\""
-	},
-	"devDependencies": {
-		"@types/mocha": "^10.0.2",
-		"@types/node": "18.x",
-		"@types/vscode": "^1.54.0",
-		"@typescript-eslint/eslint-plugin": "^6.7.3",
-		"@typescript-eslint/parser": "^6.7.3",
-		"@vscode/test-electron": "^2.3.4",
-		"eslint": "^8.51.0",
-		"eslint-config-prettier": "^9.0.0",
-		"eslint-plugin-prettier": "^5.0.1",
-		"glob": "^10.3.3",
-		"mocha": "^10.2.0",
-		"prettier": "^3.0.3",
-		"typescript": "^5.2.2"
-	}
+  "name": "variableformatter",
+  "displayName": "Variable Formatter",
+  "description": "A variable name format conversion program",
+  "version": "0.0.4",
+  "publisher": "leeou",
+  "author": "leeou",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imleeou/VariableFormatter"
+  },
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "icon": "icon.png",
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "lowerCamelCase",
+        "title": "小驼峰 (variableFormatter)"
+      },
+      {
+        "command": "upperCamelCase",
+        "title": "大驼峰 (VariableFormatter)"
+      },
+      {
+        "command": "lowerCase",
+        "title": "全小写 (variableformatter)"
+      },
+      {
+        "command": "upperCase",
+        "title": "全大写 (VARIABLEFORMATTER)"
+      },
+      {
+        "command": "underlineJoin",
+        "title": "下划线连接 (variable_formatter)"
+      },
+      {
+        "command": "constantName",
+        "title": "常量命名 (VARIABLE_FORMATTER)"
+      },
+      {
+        "command": "customSymbolJoin",
+        "title": "自定义连接符连接"
+      },
+      {
+        "command": "variableFormatter.toggleCamelCase",
+        "title": "Variable Formatter：切换驼峰命名格式",
+        "when": "editorHasSelection"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Variable Formatter",
+      "properties": {
+        "variableFormatter.customSymbol": {
+          "type": "string",
+          "default": "-",
+          "minLength": 1,
+          "maxLength": 5,
+          "markdownDescription": "自定义连接符"
+        }
+      }
+    },
+    "menus": {
+      "editor/context": [
+        {
+          "group": "navigation",
+          "when": "editorTextFocus && editorHasSelection",
+          "submenu": "menuChildren"
+        }
+      ],
+      "menuChildren": [
+        {
+          "command": "lowerCamelCase",
+          "group": "navigation@1"
+        },
+        {
+          "command": "upperCamelCase",
+          "group": "navigation@2"
+        },
+        {
+          "command": "lowerCase",
+          "group": "navigation@3"
+        },
+        {
+          "command": "upperCase",
+          "group": "navigation@4"
+        },
+        {
+          "command": "underlineJoin",
+          "group": "navigation@5"
+        },
+        {
+          "command": "constantName",
+          "group": "navigation@6"
+        },
+        {
+          "command": "customSymbolJoin",
+          "group": "navigation@7"
+        }
+      ]
+    },
+    "submenus": [
+      {
+        "id": "menuChildren",
+        "label": "Variable Formatter"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "variableFormatter.toggleCamelCase",
+        "key": "ctrl+alt+f",
+        "mac": "ctrl+alt+f"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "format": "prettier --write \"src/**/*.@(ts|tsx|js|vue)\""
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.2",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.54.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "@vscode/test-electron": "^2.3.4",
+    "eslint": "^8.51.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "glob": "^10.3.3",
+    "mocha": "^10.2.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  }
 }
