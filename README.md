@@ -25,7 +25,7 @@ Please configure the shortcut keys according to your personal habits.
 
 ## Features
 
-- Format variable name
+ Format variable name
 
 ## Install
 
@@ -42,4 +42,4 @@ See the [changelogs](https://github.com/imleeou/VariableFormatter/blob/main/CHAN
 
 ## License
 
-This software is released under the terms of the MIT license.
+This software is released under the terms of the [MIT](https://github.com/imleeou/VariableFormatter/blob/main/LICENSE.md) license.
