@@ -2,7 +2,7 @@
   "name": "variableformatter",
   "displayName": "Variable Formatter",
   "description": "A variable name format conversion program",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "publisher": "leeou",
   "author": "leeou",
   "repository": {
@@ -14,7 +14,7 @@
   },
   "icon": "icon.png",
   "categories": [
-    "Other"
+    "Formatters"
   ],
   "activationEvents": [],
   "main": "./out/extension.js",

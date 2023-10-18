@@ -8,3 +8,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - Initial release
 - Complete the initial version conversion logic, supporting large and small humps
+
+## 1.0.0 (2023/10/18)
+
+- Add more options
+- Support shortcut keys
