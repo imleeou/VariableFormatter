@@ -1,5 +1,5 @@
-import * as vscode from "vscode";
-import { COMMANDS } from "./commands";
+import * as vscode from 'vscode';
+import { COMMANDS } from './commands';
 
 // 当您的扩展被激活时会调用此方法
 export function activate(context: vscode.ExtensionContext) {
