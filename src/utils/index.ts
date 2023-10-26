@@ -27,7 +27,7 @@ export function replaceCurrentWord(newWord: string): void {
 
 /** 若字符串含有特殊字符 和 _，将其分隔 */
 export function splitBySpecialChar(str: string): string[] {
-  const regex = /[!@#$%^&*(),.?":{}|<>_]/g;
+  const regex = /[!@#$%^&*(),.?":{}|<>_ ]/g;
   return str.split(regex);
 }
 
