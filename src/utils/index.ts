@@ -1,27 +1,33 @@
 import * as vscode from 'vscode';
 
 /** 获取当前选中的单个单词 */
-export function getCurrentWord(): string {
+export function getCurrentWord(): string[] {
   const editor = vscode.window.activeTextEditor;
   if (!editor) {
-    return '';
+    return [];
   }
 
-  const selection = editor.selection;
-  const text = editor.document.getText(selection);
-  return text;
+  const selections = editor.selections;
+  const words: string[] = [];
+  // 获取多个单词
+  selections.forEach((s) => {
+    const text = editor.document.getText(s);
+    words.push(text);
+  });
+  return words;
 }
 
 /** 替换当前选中的单词 */
-export function replaceCurrentWord(newWord: string): void {
+export function replaceCurrentWord(newWord: string[]): void {
   const editor = vscode.window.activeTextEditor;
   if (!editor) {
     return;
   }
-
-  const selection = editor.selection;
+  const selections = editor.selections;
   editor.edit((editBuilder) => {
-    editBuilder.replace(selection, newWord);
+    selections.forEach((selection, index: number) => {
+      editBuilder.replace(selection, newWord[index]);
+    });
   });
 }
 

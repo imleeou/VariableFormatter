@@ -10,56 +10,65 @@ export const COMMANDS: CommandType[] = [
     name: 'lowerCamelCase',
     methods: () => {
       const text = getCurrentWord();
-      replaceCurrentWord(toCamelCase(text));
+      const newText = text.map((t) => toCamelCase(t));
+      replaceCurrentWord(newText);
     }
   },
   {
     name: 'upperCamelCase',
     methods: () => {
       const text = getCurrentWord();
-      replaceCurrentWord(toPascalCase(text));
+      const newText = text.map((t) => toPascalCase(t));
+      replaceCurrentWord(newText);
     }
   },
   {
     name: 'lowerCase',
     methods: () => {
       const text = getCurrentWord();
-      replaceCurrentWord(text.toLowerCase());
+      const newText = text.map((t) => t.toLowerCase());
+      replaceCurrentWord(newText);
     }
   },
   {
     name: 'upperCase',
     methods: () => {
       const text = getCurrentWord();
-      replaceCurrentWord(text.toUpperCase());
+      const newText = text.map((t) => t.toUpperCase());
+      replaceCurrentWord(newText);
     }
   },
   {
     name: 'underlineJoin',
     methods: () => {
       const text = getCurrentWord();
-      replaceCurrentWord(toSymbolJoin(text, '_'));
+      const newText = text.map((t) => toSymbolJoin(t, '_'));
+      replaceCurrentWord(newText);
     }
   },
   {
     name: 'constantName',
     methods: () => {
       const text = getCurrentWord();
-      const newText = toSymbolJoin(text, '_').toLocaleUpperCase();
+      const newText = text.map((t) => toSymbolJoin(t, '_').toLocaleUpperCase());
       replaceCurrentWord(newText);
     }
   },
   {
     name: 'variableFormatter.toggleCamelCase',
     methods: () => {
-      let text = getCurrentWord();
-      if (isCamelCase(text)) {
-        text = isUpperCamelCase(text) ? toCamelCase(text) : toPascalCase(text);
-      } else {
-        // 默认优先转换为小驼峰格式
-        text = toCamelCase(text);
-      }
-      replaceCurrentWord(text);
+      const text = getCurrentWord();
+      const texts = text.map((t) => {
+        let newT = t;
+        if (isCamelCase(t)) {
+          newT = isUpperCamelCase(t) ? toCamelCase(t) : toPascalCase(t);
+        } else {
+          // 默认优先转换为小驼峰格式
+          newT = toCamelCase(t);
+        }
+        return newT;
+      });
+      replaceCurrentWord(texts);
     }
   },
   {
@@ -67,7 +76,8 @@ export const COMMANDS: CommandType[] = [
     methods: () => {
       const { customSymbol } = vscode.workspace.getConfiguration('variableFormatter');
       const text = getCurrentWord();
-      replaceCurrentWord(toSymbolJoin(text, customSymbol));
+      const newTexts = text.map((t) => toSymbolJoin(t, customSymbol));
+      replaceCurrentWord(newTexts);
     }
   }
 ];
