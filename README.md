@@ -25,7 +25,9 @@ Please configure the shortcut keys according to your personal habits.
 
 ## Features
 
- Format variable name
+ - **Variable name formatting, supporting big camel case, small camel case, constants, custom character concatenation, etc.**
+ - **Support for one-click formatting of multiple selected words.**
+ - **Supports shortcut key operations.**
 
 ## Install
 
