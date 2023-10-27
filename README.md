@@ -7,6 +7,12 @@
 >
 > A variable name formats the vsCode extension plugin.
 
+## Features
+
+- **Variable name formatting, supporting big camel case, small camel case, constants, custom character concatenation, etc.**
+- **Support for one-click formatting of multiple selected words.**
+- **Supports shortcut key operations.**
+
 ## Usage
 
 ### Visual operation
@@ -22,12 +28,6 @@ Please configure the shortcut keys according to your personal habits.
 | Shortcut     | Description                                                                                                                                         |
 | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `Ctrl+Alt+F` | Toggles between full camel case and small camel case. If the initial text is not in full camel case, the default is to convert to small camel case. |
-
-## Features
-
- - **Variable name formatting, supporting big camel case, small camel case, constants, custom character concatenation, etc.**
- - **Support for one-click formatting of multiple selected words.**
- - **Supports shortcut key operations.**
 
 ## Install
 
