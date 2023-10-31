@@ -26,3 +26,13 @@ export function isMixedCase(word: string): boolean {
   const regex = /^(?=.*[a-z])(?=.*[A-Z]).+$/;
   return regex.test(word);
 }
+
+/** 判断选中字符是否含有小写字母 */
+export function isContainsLowerCase(text: string): boolean {
+  return /[a-z]/.test(text);
+}
+
+/** 判断选中字符中是否包含某个符号 */
+export function isContainsSymbol(text: string, symbol: string): boolean {
+  return text.indexOf(symbol) !== -1;
+}

@@ -64,6 +64,45 @@
           "minLength": 1,
           "maxLength": 5,
           "markdownDescription": "自定义连接符"
+        },
+        "variableFormatter.shortcutKeyOption": {
+          "type": "object",
+          "properties": {
+            "lowerCamelCase": {
+              "type": "boolean",
+              "default": true,
+              "description": "小驼峰"
+            },
+            "upperCamelCase": {
+              "type": "boolean",
+              "default": true,
+              "description": "大驼峰"
+            },
+            "underlineJoin": {
+              "type": "boolean",
+              "default": false,
+              "description": "下划线连接"
+            },
+            "constantName": {
+              "type": "boolean",
+              "default": false,
+              "description": "常量命名"
+            },
+            "customSymbolJoin": {
+              "type": "boolean",
+              "default": false,
+              "description": "自定义连接符"
+            }
+          },
+          "additionalProperties": false,
+          "default": {
+            "lowerCamelCase": true,
+            "upperCamelCase": true,
+            "underlineJoin": false,
+            "constantName": false,
+            "customSymbolJoin": false
+          },
+          "markdownDescription": "支持自定义使用默认快捷键切换的格式，若无选中项默认快捷键将失效"
         }
       }
     },

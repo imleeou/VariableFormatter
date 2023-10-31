@@ -18,7 +18,7 @@ export function toPascalCase(str: string): string {
   return word;
 }
 
-/** 将大驼峰转换为小驼峰 */
+/** 将字符串转换为小驼峰 */
 export function toCamelCase(str: string): string {
   if (isSpace(str) || isLowerCamelCase(str)) {
     return str;
