@@ -102,7 +102,7 @@
             "constantName": false,
             "customSymbolJoin": false
           },
-          "markdownDescription": "支持自定义使用默认快捷键切换的格式，若无选中项默认快捷键将失效"
+          "markdownDescription": "支持自定义使用默认快捷键切换的格式，若无选中项默认快捷键将失效。"
         }
       }
     },
