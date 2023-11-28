@@ -4,6 +4,12 @@ All notable changes to the "Variable formatter" extension will be documented in 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 1.2.1 (2023/11/28)
+
+### Fixes
+
+- Support the conversion of hyphened linked words.
+
 ## 1.2.0 (2023/10/31)
 
 ### Features
