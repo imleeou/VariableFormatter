@@ -44,6 +44,6 @@ export function clearChinese(word: string): string {
 
 /** 将驼峰格式的单词分隔开 */
 export function splitCamelCase(str: string): string[] {
-  const regex = /([A-Z]?[a-z0-9]+)/g;
+  const regex = /([A-Z]+[a-z0-9]*|[A-Z]?[a-z0-9]+)/g;
   return str.match(regex) ?? [str];
 }
