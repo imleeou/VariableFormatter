@@ -44,6 +44,7 @@ export const COMMANDS = defineCommands({
   },
   /** 快捷键指令 */
   ['variableFormatter.toggleCamelCase']: () => {
+    // 获取设置中勾选的支持快捷键转换的选项
     const { shortcutKeyOption } = vscode.workspace.getConfiguration('variableFormatter');
     const shortcutKeyTrueOption = Object.fromEntries(
       Object.entries(shortcutKeyOption).filter(([k, v]) => v === true && k in shortcutKeyOption)
@@ -64,6 +65,7 @@ export const COMMANDS = defineCommands({
           ([k]) => k in shortcutKeyTrueOption
         );
         let runIndex = 0;
+        // 为了判断当前选中的词是哪个选项的格式，然后执行可选项中的下一个选项的格式化
         handleShortcutKeyTrueOption.find(([, v], index) => {
           if (v.check(t)) {
             runIndex = index + 1;

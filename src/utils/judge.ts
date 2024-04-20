@@ -10,10 +10,10 @@ export function isUpperCamelCase(word: string): boolean {
   return regex.test(word) && isMixedCase(word);
 }
 
-/** 判断当前单词是否是小驼峰 */
+/** 判断当前单词是否是小驼峰或 纯小写（🌰：name / name123） */
 export function isLowerCamelCase(word: string): boolean {
-  const regex = /^[a-z][A-Za-z0-9]*$/;
-  return regex.test(word) && isMixedCase(word);
+  const regex = /^[a-z]+([A-Z0-9][a-z0-9]*)*$/;
+  return regex.test(word);
 }
 
 /** 判断当前选中字符是否纯空格 */

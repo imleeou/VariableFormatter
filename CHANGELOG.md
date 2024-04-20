@@ -4,6 +4,12 @@ All notable changes to the "Variable formatter" extension will be documented in 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 1.2.2 (2024/04/20)
+
+### Fixes
+
+- Supports conversion of pure lowercase words.
+
 ## 1.2.1 (2023/11/28)
 
 ### Fixes
