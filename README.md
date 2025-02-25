@@ -1,6 +1,6 @@
 <!-- 封面区域 -->
 <div align='center'>
-<img src="https://oss.leeou.cc/VariableFormatter/icon-transparent.png" alt="VariableFormatter" width="300" height="300">
+<img src="https://github.com/imleeou/VariableFormatter/blob/main/icon-transparent.png" alt="VariableFormatter" width="300" height="300">
 </div>
 
 > 一个变量名称格式化的 vsCode 扩展插件。
