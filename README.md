@@ -1,6 +1,6 @@
 <!-- 封面区域 -->
 <div align='center'>
-<img src="https://github.com/imleeou/VariableFormatter/blob/dc97d43f96e9eb85a9ea3a6d202a9c1b54721cf0/src/static/icon-transparent.png" alt="VariableFormatter" width="300" height="300">
+<img src="https://files.catbox.moe/thumbs/t_x23hiv.png" alt="VariableFormatter" width="300" height="300">
 </div>
 
 > 一个变量名称格式化的 vsCode 扩展插件。
@@ -20,7 +20,7 @@
 
 When you select a word to convert, right-click on it, hover over the `VariableFormatter` and select the format to convert to.
 
-![VariableFormatter](https://github.com/imleeou/VariableFormatter/blob/dc97d43f96e9eb85a9ea3a6d202a9c1b54721cf0/src/static/demo.gif)
+![VariableFormatter](https://files.catbox.moe/6vsuur.gif)
 
 ### Default shortcut
 
@@ -30,7 +30,7 @@ Please configure the shortcut keys according to your personal habits.
 | ------------ | --------------------------------------------------------------------- |
 | `Ctrl+Alt+F` | Default Shortcut.<br/>Support custom selection in extension settings. |
 
-![ExpansionSettings](https://github.com/imleeou/VariableFormatter/blob/dc97d43f96e9eb85a9ea3a6d202a9c1b54721cf0/src/static/ExpansionSettings.png)
+![ExpansionSettings](https://files.catbox.moe/0cs58v.png)
 
 ## Install
 
