@@ -4,6 +4,12 @@ All notable changes to the "Variable formatter" extension will be documented in 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 1.2.4 (2025/02/27)
+
+### Features
+
+- Right click on the file to copy the file name, support file or folder.
+  
 ## 1.2.3 (2025/02/25)
 
 - Nothing at all.

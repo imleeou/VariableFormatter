@@ -52,6 +52,11 @@
         "command": "variableFormatter.toggleCamelCase",
         "title": "Variable Formatter：切换驼峰命名格式",
         "when": "editorHasSelection"
+      },
+      {
+        "command": "extension.copyFileName",
+        "title": "复制名称",
+        "when": "explorerResourceIsFile || explorerResourceIsFolder"
       }
     ],
     "configuration": {
@@ -142,6 +147,12 @@
         {
           "command": "customSymbolJoin",
           "group": "navigation@7"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "extension.copyFileName",
+          "group": "1_fileContext"
         }
       ]
     },

@@ -1,4 +1,5 @@
 import * as vscode from 'vscode';
+import * as path from 'path';
 import { getCurrentWord, replaceCurrentWord } from './utils';
 import { toCamelCase, toPascalCase, toSymbolJoin } from './utils/convert';
 import { defineCommands } from './utils/define';
@@ -90,5 +91,17 @@ export const COMMANDS = defineCommands({
     const texts = getCurrentWord();
     const newTexts = texts.map((t) => toSymbolJoin(t, customSymbol));
     replaceCurrentWord(newTexts);
+  },
+  /** 右键文件菜单复制名称 不带后缀 */
+  'extension.copyFileName': async (uri: vscode.Uri) => {
+    // 获取文件名（带扩展名）
+    const fileName = path.basename(uri.fsPath);
+    // 不带拓展名
+    const nameWithoutExt = path.parse(uri.fsPath).name;
+    console.log('nameWithoutExt', fileName, nameWithoutExt);
+    // 写入剪贴板
+    await vscode.env.clipboard.writeText(nameWithoutExt);
+    // 显示提示
+    vscode.window.showInformationMessage(`已复制：${nameWithoutExt}`);
   }
 });

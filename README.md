@@ -12,6 +12,7 @@
 - **Variable name formatting, supporting big camel case, small camel case, constants, custom character concatenation, etc.**
 - **Support for one-click formatting of multiple selected words.**
 - **Supports shortcut key operations.**
+- **Right click on the file to copy the file name, support file or folder.**
 
 ## Usage
 
