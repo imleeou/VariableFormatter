@@ -41,6 +41,10 @@
         "title": "下划线连接 (variable_formatter)"
       },
       {
+        "command": "kebabCase",
+        "title": "中划线连接 (variable-formatter)"
+      },
+      {
         "command": "constantName",
         "title": "常量命名 (VARIABLE_FORMATTER)"
       },
@@ -88,6 +92,11 @@
               "default": false,
               "description": "下划线连接"
             },
+            "kebabCase": {
+              "type": "boolean",
+              "default": false,
+              "description": "中划线连接"
+            },
             "constantName": {
               "type": "boolean",
               "default": false,
@@ -104,6 +113,7 @@
             "lowerCamelCase": true,
             "upperCamelCase": true,
             "underlineJoin": false,
+            "kebabCase": false,
             "constantName": false,
             "customSymbolJoin": false
           },
@@ -141,12 +151,16 @@
           "group": "navigation@5"
         },
         {
-          "command": "constantName",
+          "command": "kebabCase",
           "group": "navigation@6"
         },
         {
-          "command": "customSymbolJoin",
+          "command": "constantName",
           "group": "navigation@7"
+        },
+        {
+          "command": "customSymbolJoin",
+          "group": "navigation@8"
         }
       ],
       "explorer/context": [

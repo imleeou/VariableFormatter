@@ -16,6 +16,10 @@ export const TEST_VARIABLE_FORMAT = {
     transform: (str: string) => toSymbolJoin(str, '_'),
     check: (str: string) => isContainsSymbol(str, '_') && isContainsLowerCase(str)
   },
+  kebabCase: {
+    transform: (str: string) => toSymbolJoin(str, '-'),
+    check: (str: string) => isContainsSymbol(str, '-') && isContainsLowerCase(str)
+  },
   constantName: {
     transform: (str: string) => toSymbolJoin(str, '_').toUpperCase(),
     check: (str: string) => isContainsSymbol(str, '_') && !isContainsLowerCase(str)
