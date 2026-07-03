@@ -25,6 +25,9 @@ export const TEST_VARIABLE_FORMAT = {
       const { customSymbol } = vscode.workspace.getConfiguration('variableFormatter');
       return toSymbolJoin(str, customSymbol ?? '-');
     },
-    check: (str: string) => isContainsSymbol(str, '_') && !isContainsLowerCase(str)
+    check: (str: string) => {
+      const { customSymbol } = vscode.workspace.getConfiguration('variableFormatter');
+      return isContainsSymbol(str, customSymbol ?? '-') && isContainsLowerCase(str);
+    }
   }
 };

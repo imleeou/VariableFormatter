@@ -37,7 +37,7 @@ export const COMMANDS = defineCommands({
     const newText = text.map((t) => toSymbolJoin(t, '_'));
     replaceCurrentWord(newText);
   },
-  /** 将字符串转换为中划线连接 */
+  /** 将字符串转换为常量命名（下划线连接并大写） */
   constantName: () => {
     const text = getCurrentWord();
     const newText = text.map((t) => toSymbolJoin(t, '_').toLocaleUpperCase());
