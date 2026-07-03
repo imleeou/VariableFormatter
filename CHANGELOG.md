@@ -1,50 +1,52 @@
-# Change Log
+中文 | [English](./CHANGELOG.en.md)
 
-All notable changes to the "Variable formatter" extension will be documented in this file.
+# 更新日志
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+"Variable Formatter" 扩展的所有重要变更将记录在此文件中。
+
+参考 [Keep a Changelog](http://keepachangelog.com/) 了解如何组织此文件。
 
 ## 1.2.4 (2025/02/27)
 
-### Features
+### 新功能
 
-- Right click on the file to copy the file name, support file or folder.
-  
+- 支持右键文件复制文件名，支持文件或文件夹。
+
 ## 1.2.3 (2025/02/25)
 
-- Nothing at all.
+- 无实质更新。
 
 ## 1.2.2 (2024/04/20)
 
-### Fixes
+### 修复
 
-- Supports conversion of pure lowercase words.
+- 支持纯小写单词的转换。
 
 ## 1.2.1 (2023/11/28)
 
-### Fixes
+### 修复
 
-- Support the conversion of hyphened linked words.
+- 支持中划线连接单词的转换。
 
 ## 1.2.0 (2023/10/31)
 
-### Features
+### 新功能
 
-- **Add extended settings, the format that supports customization when switching using default shortcut keys.**
+- **新增扩展设置，支持自定义使用默认快捷键切换时的可选格式。**
 
 ## 1.1.0 (2023/10/27)
 
-### Features
+### 新功能
 
-- Support for format conversion of words containing spaces.
-- **Support for selecting multiple words at the same time and changing the format simultaneously.**
+- 支持包含空格的单词格式转换。
+- **支持同时选中多个单词并批量转换格式。**
 
 ## 1.0.0 (2023/10/18)
 
-- Add more options
-- Support shortcut keys
+- 增加更多选项
+- 支持快捷键
 
 ## 0.0.1 (2023/10/12)
 
-- Initial release
-- Complete the initial version conversion logic, supporting large and small humps
+- 初始版本发布
+- 完成初版转换逻辑，支持大小驼峰转换
