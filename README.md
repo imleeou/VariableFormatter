@@ -1,50 +1,48 @@
+中文 | [English](./README.en.md)
+
 <!-- 封面区域 -->
 <div align='center'>
 <img src="https://files.catbox.moe/thumbs/t_x23hiv.png" alt="VariableFormatter" width="300" height="300">
 </div>
 
-> 一个变量名称格式化的 vsCode 扩展插件。
->
-> A variable name formats the vsCode extension plugin.
+> 一个变量名称格式化的 VS Code 扩展插件。
 
-## Features
+## 功能特性
 
-- **Variable name formatting, supporting big camel case, small camel case, constants, custom character concatenation, etc.**
-- **Support for one-click formatting of multiple selected words.**
-- **Supports shortcut key operations.**
-- **Right click on the file to copy the file name, support file or folder.**
+- **变量名称格式化，支持大驼峰、小驼峰、常量命名、自定义字符连接等。**
+- **支持一键格式化多个选中单词。**
+- **支持快捷键操作。**
+- **支持右键文件复制文件名（文件或文件夹）。**
 
-## Usage
+## 使用方式
 
-### Visual operation
+### 可视化操作
 
-When you select a word to convert, right-click on it, hover over the `VariableFormatter` and select the format to convert to.
+选中要转换的单词，右键点击，在 `Variable Formatter` 子菜单中选择要转换的格式。
 
 ![VariableFormatter](https://files.catbox.moe/6vsuur.gif)
 
-### Default shortcut
+### 默认快捷键
 
-Please configure the shortcut keys according to your personal habits.
+请根据个人习惯配置快捷键。
 
-| Shortcut     | Description                                                           |
-| ------------ | --------------------------------------------------------------------- |
-| `Ctrl+Alt+F` | Default Shortcut.<br/>Support custom selection in extension settings. |
+| 快捷键       | 说明                                                               |
+| ------------ | ------------------------------------------------------------------ |
+| `Ctrl+Alt+F` | 默认快捷键。<br/>支持在扩展设置中自定义可选格式。                    |
 
 ![ExpansionSettings](https://files.catbox.moe/0cs58v.png)
 
-## Install
+## 安装
 
-Plugin installation is performed in several stages:
+1. 按 `F1` 并选择 `Extensions: Install Extensions`。
+2. 搜索并选择 `Variable Formatter`。
 
-1. Press `F1` and select `Extensions: Install Extensions`.
-2. Search and choose `Variable Formatter`.
+详见 [扩展安装指南](https://code.visualstudio.com/docs/editor/extension-gallery)。
 
-See the [extension installation guide](https://code.visualstudio.com/docs/editor/extension-gallery) for details.
+## 更新日志
 
-## Changelog
+查看各版本的 [更新日志](https://github.com/imleeou/VariableFormatter/blob/main/CHANGELOG.md)。
 
-See the [changelogs](https://github.com/imleeou/VariableFormatter/blob/main/CHANGELOG.md) for each release version.
+## 许可证
 
-## License
-
-This software is released under the terms of the [MIT](https://github.com/imleeou/VariableFormatter/blob/main/LICENSE.md) license.
+本项目基于 [MIT](https://github.com/imleeou/VariableFormatter/blob/main/LICENSE.md) 许可发布。
