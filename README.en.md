@@ -9,8 +9,9 @@
 
 ## Features
 
-- **Variable name formatting, supporting big camel case, small camel case, constants, custom character concatenation, etc.**
+- **Variable name formatting, supporting PascalCase, camelCase, constant naming, kebab-case, custom character concatenation, etc.**
 - **Support for one-click formatting of multiple selected words.**
+- **Support both right-click menu and Code Actions (lightbulb) for format selection.**
 - **Supports shortcut key operations.**
 - **Right click on the file to copy the file name, support file or folder.**
 

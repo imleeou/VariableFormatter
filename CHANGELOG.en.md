@@ -6,6 +6,19 @@ All notable changes to the "Variable Formatter" extension will be documented in 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 1.2.6 (2026/07/03)
+
+### Features
+
+- Add kebab-case format conversion.
+- Add Code Actions (lightbulb) support, quick format selection via lightbulb or `Ctrl+.` (Mac: `Cmd+.`) when text is selected.
+
+## 1.2.5 (2025/02/27)
+
+### Fixes
+
+- Update documentation.
+
 ## 1.2.4 (2025/02/27)
 
 ### Features
