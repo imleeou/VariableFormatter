@@ -118,6 +118,11 @@
             "customSymbolJoin": false
           },
           "markdownDescription": "支持自定义使用默认快捷键切换的格式，若无选中项默认快捷键将失效。"
+        },
+        "variableFormatter.enableCodeActions": {
+          "type": "boolean",
+          "default": true,
+          "markdownDescription": "是否启用灯泡提示（Code Actions），选中文本后显示格式转换选项。"
         }
       }
     },

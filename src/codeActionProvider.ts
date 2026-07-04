@@ -1,5 +1,10 @@
 import * as vscode from 'vscode';
 
+/** 获取插件配置 */
+function getConfig() {
+  return vscode.workspace.getConfiguration('variableFormatter');
+}
+
 /** 各格式转换命令及显示名称 */
 const FORMAT_ACTIONS: { command: string; title: string }[] = [
   { command: 'lowerCamelCase', title: '转换为小驼峰' },
@@ -19,6 +24,11 @@ export class VariableFormatterCodeActionProvider implements vscode.CodeActionPro
     _context: vscode.CodeActionContext,
     _token: vscode.CancellationToken
   ): vscode.CodeAction[] {
+    // 检查是否启用灯泡提示
+    if (!getConfig().get<boolean>('enableCodeActions', true)) {
+      return [];
+    }
+
     // 仅当编辑器有选中文本时提供 Code Action
     if (range.isEmpty) {
       return [];
